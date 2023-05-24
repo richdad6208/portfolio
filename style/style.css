@@ -1,0 +1,520 @@
+@font-face {
+  font-family: "raleway";
+  src: url(../webfonts/Raleway-Regular.ttf) format("truetype");
+  font-weight: 400;
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+@font-face {
+  font-family: "raleway";
+  src: url(../webfonts/Raleway-medium.ttf) format("truetype");
+  font-weight: 500;
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+@font-face {
+  font-family: "raleway";
+  src: url(../webfonts/Raleway-semibold.ttf) format("truetype");
+  font-weight: 600;
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+@font-face {
+  font-family: "raleway";
+  src: url(../webfonts/Raleway-bold.ttf) format("truetype");
+  font-weight: 700;
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+@font-face {
+  font-family: "pretendard";
+  src: url(../webfonts/pretendard-regular.otf) format("opentype");
+  font-weight: 700;
+  unicode-range: U+AC00-D7A3;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  color: inherit;
+  text-decoration: inherit;
+  vertical-align: baseline;
+  font-family: "raleway", "pretendard";
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*javascript class*/
+.skillSelect {
+  filter: grayscale(0) !important;
+}
+
+.activated {
+  opacity: 1 !important;
+  transition: 0.4s !important;
+}
+
+.workSelect {
+  opacity: 0.7 !important;
+}
+
+/*==================*/
+body {
+  overflow-x: hidden;
+  text-transform: uppercase;
+}
+
+body > *:not(.visual_section, aside) {
+  padding: 0 100px;
+  box-sizing: border-box;
+}
+
+.clear {
+  position: absolute;
+  left: -5000px;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  background: #5D5D5D;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header h1 {
+  width: 30%;
+  font-weight: 700;
+  font-size: 40px;
+  color: white;
+  line-height: 100px;
+  z-index: 3;
+}
+.header nav {
+  width: 70%;
+  box-sizing: border-box;
+  padding-left: 100px;
+}
+.header nav ul {
+  display: flex;
+  justify-content: flex-start;
+}
+.header nav ul li {
+  position: relative;
+  margin-right: 20px;
+}
+.header nav ul li:hover a::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #FEF200;
+  display: block;
+  position: absolute;
+  top: 70px;
+  transition: 0.4s;
+}
+.header nav ul li a {
+  font-weight: 500;
+  font-size: 25px;
+  color: white;
+  line-height: 100px;
+  display: block;
+}
+
+aside {
+  position: fixed;
+  opacity: 0;
+  right: 0;
+  z-index: 5;
+  background: white;
+  transition: 0.2s;
+}
+aside a {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  font-size: 14px;
+  display: inline-block;
+  background: black;
+  color: white;
+}
+aside a:hover {
+  color: #FEF200;
+  transition: 0.4s;
+}
+
+.visual_section {
+  overflow: hidden;
+  position: relative;
+  background: #ECECEC;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+.visual_section .black_bg {
+  background: #171717;
+  height: 980px;
+  width: 30%;
+  position: absolute;
+  top: -100px;
+  z-index: 2;
+  left: 0;
+}
+.visual_section .image_wrap {
+  width: 70%;
+}
+.visual_section .image_wrap img {
+  width: 100%;
+  height: 880px;
+  filter: grayscale(1.5);
+}
+.visual_section .text {
+  position: absolute;
+  left: 280px;
+  top: 300px;
+  z-index: 3;
+}
+.visual_section .text p:first-child {
+  font-weight: 500;
+  font-size: 25px;
+  font-size: 40px;
+}
+.visual_section .text p:nth-child(2) {
+  font-weight: 600;
+  font-size: 30px;
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+.visual_section .text a {
+  font-weight: 600;
+  font-size: 30px;
+  font-size: 30px;
+  padding: 15px 30px;
+  background: #FEF200;
+  color: black;
+}
+
+.intro_section {
+  height: 100vh;
+  background: #ECECEC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.intro_section .photo_wrap {
+  width: 30%;
+  margin-right: 100px;
+}
+.intro_section .photo_wrap .black_bg {
+  width: 400px;
+  height: 500px;
+  background: black;
+  position: relative;
+  box-shadow: 0 0.5px 5px 2px rgba(0, 0, 0, 0.235);
+}
+.intro_section .photo_wrap .black_bg::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #FEF200;
+  position: absolute;
+  top: 390px;
+  left: 315px;
+  z-index: 2;
+}
+.intro_section .photo_wrap .black_bg::after {
+  content: "";
+  display: block;
+  background: url(../images/circle.png) no-repeat;
+  width: 70px;
+  height: 70px;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 365px;
+  left: 330px;
+  z-index: 2;
+}
+.intro_section .photo_wrap img {
+  width: 400px;
+  height: 500px;
+  box-shadow: 0 0.5px 5px 2px rgba(0, 0, 0, 0.26);
+  filter: grayscale(1.5);
+  position: absolute;
+  left: 250px;
+  top: 120px;
+}
+.intro_section .text_wrap {
+  width: 50%;
+}
+.intro_section .text_wrap span {
+  font-weight: 600;
+  font-size: 30px;
+  font-size: 25px;
+  text-indent: 60px;
+  display: block;
+  margin-bottom: -10px;
+}
+.intro_section .text_wrap h3 {
+  font-weight: 700;
+  font-size: 40px;
+  font-size: 60px;
+}
+.intro_section .text_wrap h3::after {
+  content: "";
+  width: 200px;
+  height: 20px;
+  background: #FEF200;
+  display: block;
+  margin-top: -20px;
+}
+.intro_section .text_wrap p {
+  width: 70%;
+  margin-top: 40px;
+  font-weight: 500;
+  font-size: 25px;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.skill_section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skill_section span {
+  font-weight: 600;
+  font-size: 30px;
+}
+.skill_section h3 {
+  font-weight: 700;
+  font-size: 40px;
+  font-size: 50px;
+  position: relative;
+}
+.skill_section h3::after {
+  content: "";
+  width: 100%;
+  height: 24px;
+  background: #FEF200;
+  display: block;
+  position: absolute;
+  top: 27px;
+  z-index: -1;
+}
+.skill_section .desc_wrap {
+  margin-top: 40px;
+  width: 700px;
+  height: 380px;
+  background: #ECECEC;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 0 0.5px 5px 2px rgba(0, 0, 0, 0.145);
+}
+.skill_section .desc_wrap::before {
+  content: "";
+  background: url(../images/quotation.png) no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  top: -30px;
+  left: 40px;
+}
+.skill_section .desc_wrap .text_wrap {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+.skill_section .desc_wrap .text_wrap p {
+  width: 90%;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  font-weight: 600;
+  font-size: 30px;
+  font-size: 19px;
+  color: #5D5D5D;
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  opacity: 0;
+}
+.skill_section figure {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  display: flex;
+  opacity: 0;
+  justify-content: center;
+  align-items: flex-end;
+  box-sizing: border-box;
+  right: -100px;
+  top: 70px;
+}
+.skill_section figure figcaption {
+  font-weight: 600;
+  font-size: 30px;
+}
+.skill_section figure img {
+  width: 150px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translatex(-50%);
+  box-shadow: 0 0.5px 5px 2px rgba(0, 0, 0, 0.145);
+  background: white;
+}
+.skill_section .skill_wrap {
+  margin-top: 30px;
+}
+.skill_section .skill_wrap img {
+  width: 50px;
+  box-shadow: 0 0.5px 5px 2px rgba(0, 0, 0, 0.145);
+  border-radius: 50%;
+  filter: grayscale(1);
+}
+.skill_section .skill_wrap img:hover {
+  filter: grayscale(0);
+}
+
+.work_section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.work_section h3 {
+  font-weight: 700;
+  font-size: 40px;
+  font-size: 48px;
+  position: relative;
+}
+.work_section h3::after {
+  content: "";
+  display: block;
+  background: url(../images/circle2.png) no-repeat;
+  background-size: 100% 100%;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -40px;
+  right: -65px;
+}
+.work_section span {
+  font-weight: 700;
+  font-size: 40px;
+  font-size: 18px;
+  position: relative;
+}
+.work_section span::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 12px;
+  background: #FEF200;
+  position: absolute;
+  top: -2px;
+  z-index: -1;
+}
+.work_section .work_wrap {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-auto-rows: 300px;
+  gap: 10px;
+}
+.work_section .work_wrap figure {
+  position: relative;
+}
+.work_section .work_wrap figure:hover img {
+  filter: grayscale(0);
+}
+.work_section .work_wrap figure img {
+  box-shadow: 0 0.5px 5px 2px rgba(0, 0, 0, 0.145);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: grayscale(1);
+}
+.work_section .work_wrap figure figcaption {
+  background: #FEF200;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.work_section .work_wrap figure figcaption a > img {
+  box-shadow: none;
+  width: 40px;
+  height: 40px;
+  margin-top: 15px;
+}
+.work_section .work_wrap figure figcaption p {
+  font-weight: 500;
+  font-size: 25px;
+  width: 85%;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 15px;
+}

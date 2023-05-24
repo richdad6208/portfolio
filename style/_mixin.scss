@@ -1,0 +1,16 @@
+@mixin lv1Title {
+font-weight: 700;
+font-size: 40px;
+}
+@mixin lv2Title {
+font-weight: 600;
+font-size: 30px;
+}
+@mixin lv3Title {
+font-weight: 500;
+font-size:25px;
+}
+@mixin lv4Title {
+font-weight: 400;
+font-size: 18px;
+}
