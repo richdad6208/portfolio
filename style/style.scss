@@ -18,7 +18,7 @@ opacity: 1 !important;
 transition: .4s !important;
 }
 .workSelect {
-opacity: .7 !important;
+display:block !important;
 }
 /*==================*/
 body {
@@ -26,7 +26,7 @@ overflow-x: hidden;
 text-transform: uppercase;
 }
 body > *:not(.visual_section, aside) {
-padding: 0 100px;
+padding: 0 200px;
 box-sizing: border-box;
 }
 .clear {
@@ -41,6 +41,8 @@ background: $gray;
 display: flex;
 justify-content: flex-start;
 align-items: center;
+position: relative;
+z-index: 1;
 h1 {
 width: 30%;
 @include lv1Title;
@@ -48,6 +50,14 @@ color: white;
 line-height: 100px; 
 z-index: 3;
     }
+.black_bg {
+width: 30%;
+height: 100%;
+background: $black;
+position: absolute;
+left: 0;
+
+}
 nav {
 width: 70%;
 box-sizing: border-box;
@@ -113,12 +123,17 @@ display:flex;
 justify-content: flex-end;
 .black_bg {
 background: $black;
-height:980px;
+height:880px;
 width: 30%;
 position: absolute;
-top: -100px;
-z-index: 2;
+z-index: 4;
 left:0;
+img {
+z-index:5;
+position: absolute;
+left:  25px;
+top: 200px;
+}
 }
 .image_wrap {
 width: 70%;
@@ -131,8 +146,8 @@ filter: grayscale(1.5);
 .text {
 position: absolute;
 left: 280px;
-top: 300px;
-z-index: 3;
+top:500px;
+z-index: 5;
 p:first-child {
 @include lv3Title;
 font-size: 40px;
@@ -198,12 +213,24 @@ img {
 width: 400px;
 height: 500px;  
 box-shadow: 0 .5px 5px 2px rgba(0, 0, 0, 0.26);
-filter: grayscale(1.5);
+filter: grayscale(1);
 position: absolute;
 left: 250px;
 top: 120px;
-
+&:hover {
+filter: grayscale(0);
 }
+}
+}
+.pattern {
+position: absolute;
+top: 750px;
+left: 435px;
+}
+.pattern2 {
+position: absolute;
+top:250px;
+left: 1100px;
 }
 .text_wrap {
 width: 50%;
@@ -242,6 +269,12 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+position: relative;
+& > img {
+position: absolute;
+left: 150px;
+top: 200px;
+}
 span {
 @include lv2Title;
 }
@@ -346,6 +379,7 @@ display: flex;
 flex-direction: column;
 justify-content: center; 
 align-items: center;
+position: relative;
 h3 {
 @include lv1Title;
 font-size: 48px;
@@ -377,6 +411,12 @@ top:-2px;
 z-index: -1;
 }
 }
+& > img {
+position: absolute;
+right: 200px;
+top: 0;
+
+}
 .work_wrap {
 margin-top: 50px;
 display: grid;
@@ -397,16 +437,27 @@ filter: grayscale(1);
 }
 figcaption {
 background: $yellow;
-opacity: 0;
+opacity:.7;
+text-align: center;
 position: absolute;
 left: 0;
 top: 0;
 width: 100%;
 height: 100%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+display: none;
+button {
+display: block;
+margin: 0 auto;
+border: none;
+background: transparent;
+@include lv4Title;
+margin-top: 10px;
+padding: 20px;
+cursor: pointer;
+&:hover {
+font-weight: bolder;
+}
+}
 a > img {
 box-shadow: none;
 width: 40px;
@@ -418,9 +469,82 @@ p {
 width: 85%;
 font-size: 15px;
 text-align: center;
-margin-top: 15px;
+margin: 15px auto;
 }
 }
 }
+}
+.figcaption_wrap {
+position: absolute;
+top: 55%;
+transform: translatey(-50%);
+}
+}
+
+.footer {
+height: 400px;
+background: $black;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: white;
+box-sizing: border-box;
+& > span {
+padding: 5px 5px;
+background: $yellow;
+color: black;
+}
+h3 {
+margin-top: 10px;
+@include lv1Title;
+font-size: 45px;
+margin-bottom: 70px;
+}
+.inform_wrap {
+display: flex;
+width: 100%;
+justify-content: space-between;
+@include lv2Title;
+font-size: 20px;
+margin-bottom: 70px;
+span:nth-child(2) {
+margin-left: -90px;
+}
+span:nth-child(1)::before {
+content: "";
+width: 25px;
+height: 20px;
+background: url(../images/inform1.png);
+background-size: 100% 100%;
+display: inline-block;
+vertical-align: bottom;
+margin-right: 10px;
+}
+span:nth-child(2)::before {
+content: "";
+vertical-align: bottom;
+width: 25px;
+height: 25px;
+background: url(../images/inform2.png);
+background-size: 100% 100%;
+display: inline-block;
+margin-right: 10px;
+}
+span:nth-child(3)::before {
+content: "";
+width: 25px;
+height: 25px;
+vertical-align: bottom;
+background: url(../images/inform3.png);
+background-size: 100% 100%;
+display: inline-block;
+margin-right: 10px;
+}
+}
+small {
+@include lv2Title;
+font-size: 15px;
 }
 }

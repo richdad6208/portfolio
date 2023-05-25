@@ -28,6 +28,12 @@ src: url(../webfonts/pretendard-regular.otf) format("opentype");
 font-weight: 700;
 unicode-range: U+AC00-D7A3;
 }
+@font-face {
+font-family: "roboto";
+src: url(../webfonts/roboto-light.ttf) format("truetype");
+font-weight: 300;
+unicode-range: U+0030-0039;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -49,7 +55,7 @@ time, mark, audio, video {
 	color: inherit;
 	text-decoration: inherit;
 	vertical-align: baseline;
-	font-family: 'raleway', 'pretendard';
+	font-family: 'raleway', 'pretendard', 'roboto';
 	
 }
 /* HTML5 display-role reset for older browsers */
