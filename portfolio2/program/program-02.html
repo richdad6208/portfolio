@@ -38,11 +38,11 @@
             <li>
               <a href="/program/program-01.html">프로그램 안내 </a>
               <ul class="sub-nav-list" role="list">
-                <li><a href="/program/program-02.html">아동</a></li>
-                <li><a href="/program/program-03.html">부모</a></li>
-                <li><a href="/program/program-04.html">교직원</a></li>
-                <li><a href="/program/program-05.html">기관</a></li>
-                <li><a href="/program/program-06.html">비용안내</a></li>
+                <li><a href="/program/program-01.html">아동</a></li>
+                <li><a href="/program/program-02.html">부모</a></li>
+                <li><a href="/program/program-03.html">교직원</a></li>
+                <li><a href="/program/program-04.html">기관</a></li>
+                <li><a href="/program/program-05.html">비용안내</a></li>
               </ul>
             </li>
             <li><a href="#a">심리검사 </a></li>
@@ -77,17 +77,26 @@
     <main>
       <section
         class="hero | padding-block-900 text-center margin-block-start-700-sm"
-        data-page="intro"
+        data-page="program"
       >
         <div class="container">
-          <h2 class="hero__title | fs-primary-heading text-neutral-100">
-            연구소 소개
-          </h2>
+          <div class="hero-wrapper | gap-100">
+            <h2 class="hero__title | fs-primary-heading text-neutral-100">
+              프로그램 안내
+            </h2>
+            <span class="hero__body">
+              모든 프로그램은 요청에 따라
+              <span class="text-primary-200 fw-bold text-underline"
+                >기관방문/내원/비대면</span
+              >
+              상담으로 진행 가능합니다.
+            </span>
+          </div>
         </div>
       </section>
       <aside class="padding-block-start-500">
         <div class="container">
-          <div class="flex-space-between flex-column-reverse-sm border-bottom">
+          <div class="flex-space-between flex-column-reverse-sm">
             <nav class="secondary-navigation | fs-tertiary-heading">
               <ul
                 class="menu-list | flow-sm"
@@ -95,55 +104,90 @@
                 role="list"
                 aria
               >
-                <li class="active">
-                  <a href="/intro/intro-01.html">연구소 스토리 </a>
+                <li>
+                  <a href="/program/program-01.html">아동</a>
                 </li>
-                <li><a href="/intro/intro-02.html">인사말 </a></li>
-                <li><a href="/intro/intro-03.html">전문가 소개 </a></li>
-                <li><a href="/intro/intro-04.html">협력기관 </a></li>
+                <li aria-current="page" class="active">
+                  <a href="/program/program-02.html">부모</a>
+                </li>
+                <li>
+                  <a href="/program/program-03.html">교직원</a>
+                </li>
+                <li>
+                  <a href="/program/program-04.html">기관</a>
+                </li>
                 <li class="padding-block-500-md">
-                  <a href="/intro/intro-05.html">오시는길</a>
+                  <a href="/program/program-05.html">비용안내</a>
                 </li>
               </ul>
             </nav>
             <p class="fs-200 text-neutral-400">
               HOME / 연구소 소개 /
-              <span class="fw-bold text-accent-200">연구소 스토리</span>
+              <span class="fw-bold text-accent-200">부모</span>
             </p>
           </div>
         </div>
       </aside>
       <section class="padding-block-1100">
-        <div class="container-short">
-          <div class="story | flow" style="--flow-spacer: 3rem">
-            <img class="story__img" src="/images/logo.png" alt="" />
-            <h3 class="story__title | fs-secondary-heading">
-              오직 <span class="fw-bold">아이들의 행복한 미소</span>를 위해..
-            </h3>
-            <p class="story__body">
-              한국아동발달연구소는 직장어린이집을 전문적으로 위탁운영하는
-              모아맘보육재단에서 제2의 도약을 위한 사회적공헌사업의 일환으로
-              탄생하였습니다.
-            </p>
-            <p class="story__body">
-              발달에 어려움을 겪는 아이들의 치료 및 일반 아동의 정서적 안정을
-              목적으로 교사와 부모 등 주 양육자를 대상으로 심리상담 서비스 및
-              교육을 전문으로 하는 공익목적의 사단법인입니다.
-            </p>
-            <p class="story__body">
-              관련분야에서 수십년의 경험이 있는 아동심리상담전문가와
-              보육현장전문가가 만나 어려움을 겪고 있는 아동들에게 즉각적인
-              도움을 줄 수 있습니다. 아동과 연계된 주 양육자인 부모, 교사 등의
-              진단, 심리상담, 코칭을 통해 궁극적으로는 우리 아이들의 행복한
-              미소를 만들어 가겠습니다.
-            </p>
-            <div class="story__summary-wrapper">
-              <span class="story__summary | fs-quaternary-heading">비전</span
-              ><span
-                class="story__summary story__summary__inverse | fs-quaternary-heading"
-                >영유아·아동 과 청소년의 정서 및 발달 지원으로 건강하고 안정적인
-                양육환경 조성</span
-              >
+        <div class="container">
+          <div class="grid-two-columns-1to4">
+            <h3 class="title--pointed">프로그램</h3>
+            <div
+              class="program | flow margin-block-start-700-sm"
+              style="--flow-spacer: 6rem"
+            >
+              <div class="flow" style="--flow-spacer: 0.7rem">
+                <img
+                  class="program__img"
+                  src="/images/program-child-03.jpg"
+                  alt=""
+                />
+                <p class="program__subtitle">상담</p>
+                <h4 class="program__title">부모개인상담</h4>
+                <p class="program__body">
+                  자녀양육에 있어 부모로서 갖는 고충. 갈등에 대해 탐색하는
+                  시간입니다. 자녀와의 관계에서 드러나는 부모 자신의 특성을 깊이
+                  있게 이해함으로써 부모로서의 자신감과 효능감을 갖도록
+                  돕습니다. 온라인 상담 진행 시 영상분석도 가능합니다.
+                </p>
+                <h4 class="program__title">부모집단상담</h4>
+                <p class="program__body">
+                  사전 질문지를 작성하여 호소 문제별 집단상담을 진행합니다.
+                  (10명 이내)
+                </p>
+              </div>
+              <div class="flow" style="--flow-spacer: 0.7rem">
+                <img
+                  class="program__img"
+                  src="/images/program-child-04.jpg"
+                  alt=""
+                />
+                <p class="program__subtitle">교육</p>
+                <h4 class="program__title">부모교육</h4>
+                <p class="program__body | margin-block-end-300">
+                  발달과 관련된 주제를 선정하여 정기적으로 진행하고 있는 대집단
+                  교육입니다.
+                </p>
+                <p class="program__subbody">
+                  *요청에 따라 특정 주제를 선정하여 맞춤형 교육이 가능하며,
+                  온라인 오프라인 모두 가능합니다.
+                </p>
+                <h4 class="program__title">부모교육 과정</h4>
+                <p class="program__body | margin-block-end-300">
+                  부모양육 스트레스관리 과정 / 힐링맘 과정 (6~10명)으로 6회기
+                  진행합니다.
+                </p>
+                <p class="program__subtitle">힐링프로그램</p>
+                <h4 class="program__title">부모힐링프로그램</h4>
+                <p class="program__body">
+                  부모를 위한 힐링프로그램입니다. (집단 10명 이내)
+                </p>
+                <ul role="list" class="program__list">
+                  <li>너와 나의 마음이해 (워크시트 활용 프로그램)집단</li>
+                  <li>너와 나의 성격이해 (MBTI 검사 후 프로그램 진행)집단</li>
+                  <li>너와 나의 기질이해 (TCI 검사 후 프로그램 진행)개인</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
