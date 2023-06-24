@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/webfonts.css" />
     <script src="/js/main.js" defer></script>
+    <script src="/js/modal.js" defer></script>
     <title>사단법인 한국아동발달연구소</title>
   </head>
   <body>
@@ -54,12 +55,12 @@
               </ul>
             </li>
             <li>
-              <a href="#a">게시판 </a>
+              <a href="/board/board-01.html">게시판 </a>
               <ul class="sub-nav-list" role="list">
-                <li><a href="#a">공지사항</a></li>
-                <li><a href="#a">상담후기</a></li>
-                <li><a href="#a">양육상담</a></li>
-                <li><a href="#a">일정표</a></li>
+                <li><a href="/board/board-01.html">공지사항</a></li>
+                <li><a href="/board/board-02.html">상담후기</a></li>
+                <li><a href="/board/board-03.html">양육상담</a></li>
+                <li><a href="/board/board-04.html">일정표</a></li>
               </ul>
             </li>
             <li>
@@ -101,73 +102,132 @@
                 aria
               >
                 <li aria-current="page" class="active">
-                  <a href="/order/order-01.html">상담절차</a>
+                  <a href="/board/board-01.html">공지사항</a>
                 </li>
                 <li>
-                  <a href="/order/order-02.html">상담예약</a>
+                  <a href="/board/board-02.html">상담후기</a>
+                </li>
+                <li>
+                  <a href="/board/board-03.html">양육상담</a>
+                </li>
+                <li>
+                  <a href="/board/board-04.html">일정표</a>
                 </li>
               </ul>
             </nav>
             <p class="fs-200 text-neutral-400">
-              HOME / 상담안내 /
-              <span class="fw-bold text-accent-200">상담절차</span>
+              HOME / 게시판 /
+              <span class="fw-bold text-accent-200">공지사항</span>
             </p>
           </div>
         </div>
       </aside>
       <section class="padding-block-900">
-        <div class="container | bg-neutral-200 padding-block-700">
-          <div class="circle">
-            <div class="circle-outter">
-              <figure class="circle-inner">
-                <img class="circle__img" src="/images/order-01.jpg" alt="" />
-                <figcaption class="circle__body">홈페이지 문의</figcaption>
-              </figure>
-            </div>
-            <div class="circle-outter">
-              <figure class="circle-inner">
-                <img class="circle__img" src="/images/order-02.jpg" alt="" />
-                <figcaption class="circle__body">일정예약</figcaption>
-              </figure>
-            </div>
-            <div class="circle-outter">
-              <figure class="circle-inner">
-                <img class="circle__img" src="/images/order-03.jpg" alt="" />
-                <figcaption class="circle__body">초기 상담</figcaption>
-              </figure>
-            </div>
-            <div class="circle-outter">
-              <figure class="circle-inner">
-                <img class="circle__img" src="/images/order-04.jpg" alt="" />
-                <figcaption class="circle__body">검사 진행</figcaption>
-              </figure>
-            </div>
-            <div class="circle-outter">
-              <figure class="circle-inner">
-                <img class="circle__img" src="/images/order-05.jpg" alt="" />
-                <figcaption class="circle__body">사후관리</figcaption>
-              </figure>
-            </div>
-            <div class="circle-outter">
-              <figure class="circle-inner">
-                <img class="circle__img" src="/images/order-06.jpg" alt="" />
-                <figcaption class="circle__body">상담종료</figcaption>
-              </figure>
-            </div>
-            <div class="circle-outter">
-              <figure class="circle-inner">
-                <img class="circle__img" src="/images/order-07.jpg" alt="" />
-                <figcaption class="circle__body">상담 및 치료</figcaption>
-              </figure>
-            </div>
-            <div class="circle-outter">
-              <figure class="circle-inner">
-                <img class="circle__img" src="/images/order-08.jpg" alt="" />
-                <figcaption class="circle__body">검사결과설명</figcaption>
-              </figure>
+        <div class="container">
+          <div class="table-wrapper | flow" style="--flow-spacer: 4rem">
+            <table class="table" data-icon="none">
+              <colgroup>
+                <col style="width: 10%" />
+                <col />
+                <col style="width: 5%" />
+                <col style="width: 15%" />
+                <col style="width: 5%" />
+              </colgroup>
+              <thead class="table__head">
+                <tr>
+                  <th class="table__th__number">번호</th>
+                  <th class="table__th__title">제목</th>
+                  <th class="table__th__user">작성자</th>
+                  <th class="table__th__date">날짜</th>
+                  <th class="table__th__view">조회수</th>
+                </tr>
+              </thead>
+              <tbody class="table__body">
+                <tr>
+                  <td class="table__number">-</td>
+                  <td class="table__title">
+                    <a href=""
+                      ><span>공지사항</span>2023 아동심리발달교육 4단계 (원장
+                      전문성 교육)안내</a
+                    >
+                  </td>
+                  <td class="table__user">관리자</td>
+                  <td class="table__date">2023-03-21</td>
+                  <td class="table__view">54</td>
+                </tr>
+                <tr>
+                  <td class="table__number">-</td>
+                  <td class="table__title">
+                    <a href=""
+                      ><span>공지사항</span>아동심리교육4단계 '그림으로
+                      이야기하는 아동심리 이해'</a
+                    >
+                  </td>
+                  <td class="table__user">관리자</td>
+                  <td class="table__date">2022-08-19</td>
+                  <td class="table__view">163</td>
+                </tr>
+                <tr>
+                  <td class="table__number">-</td>
+                  <td class="table__title">
+                    <a href=""><span>공지사항</span>아동심리발달교육 안내</a>
+                  </td>
+                  <td class="table__user">관리자</td>
+                  <td class="table__date">2022-04-19</td>
+                  <td class="table__view">341</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="control | flow">
+              <div class="search | flow">
+                <form
+                  class="search__form | flow-sm"
+                  style="--flow-spacer: 0.5rem"
+                  action=""
+                >
+                  <label class="visually-hidden" for="search__box"
+                    >제목, 내용, 작성자 이름</label
+                  >
+                  <select class="search__select" id="search__box">
+                    <option value="">제목</option>
+                    <option value="content">내용</option>
+                    <option value="user">작성자 이름</option>
+                  </select>
+                  <input
+                    class="search__input"
+                    type="text"
+                    placeholder="검색어를 입력하세요"
+                  />
+                  <button class="button" data-colored="none">검색</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
+        <dialog class="dialog">
+          <form
+            class="dialog__form"
+            action="
+            "
+          >
+            <div class="dialog__label-wrapper flex-space-between">
+              <label class="dialog__label" for="password">비밀번호 입력</label>
+              <button class="dialog__close" aria-label="modal close">
+                <img src="/images/icon-cancel--colored.png" alt="" />
+              </button>
+            </div>
+            <input
+              class="dialog__input"
+              name="password"
+              type="password"
+              placeholder="Password"
+            />
+            <div class="button-wrapper">
+              <button class="button close" data-colored="white">닫기</button>
+              <button class="button" type="submit">확인</button>
+            </div>
+          </form>
+        </dialog>
       </section>
     </main>
     <footer
