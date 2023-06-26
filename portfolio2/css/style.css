@@ -425,8 +425,8 @@ body {
 /* notice */
 
 .notice {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .notice:hover .notice__body {
   color: var(--crl-primary-400);
@@ -436,11 +436,12 @@ body {
   color: var(--crl-neutral-900);
 }
 .notice__meta {
-  flex-shrink: 0;
+  word-break: keep-all;
   display: flex;
   gap: var(--size-200);
   font-size: var(--fs-200);
   color: var(--crl-neutral-400);
+  white-space: nowrap;
 }
 .notice__meta .icon-eye-added::before {
   content: "" url(/portfolio2/images/icon-eye.png);
@@ -459,7 +460,8 @@ body {
 }
 @media (max-width: 43em) {
   .review {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(1rem, 1fr) minmax(1rem, 1fr);
+    gap: var(--size-200);
   }
   .review__body {
     font-size: var(--fs-400);
