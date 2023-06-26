@@ -805,7 +805,6 @@ h3.story__title {
 }
 .price__table th,
 td {
-  border: 1px solid var(--crl-neutral-400);
   padding: var(--size-300) var(--size-700);
 }
 
