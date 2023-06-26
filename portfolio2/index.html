@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/webfonts.css" />
     <script src="/js/main.js" defer></script>
+    <script src="/js/modal.js" defer></script>
+    <script src="/js/alert.js" defer></script>
+    <script src="/js/slider.js" defer></script>
     <title>사단법인 한국아동발달연구소</title>
   </head>
   <body>
-    <header
-      class="primary-header | bg-neutral-100 padding-block-500-md padding-block-300-sm"
-    >
+    <header class="primary-header | bg-neutral-100 padding-block-300-sm">
       <div class="container | flex-space-between">
         <a href="/index.html" aria-label="home"
           ><img src="/images/logo.png" alt="사단법인 한국아동발달연구소"
@@ -36,37 +37,39 @@
               </ul>
             </li>
             <li>
-              <a href="#a">프로그램 안내 </a>
+              <a href="/program/program-01.html">프로그램 안내 </a>
               <ul class="sub-nav-list" role="list">
-                <li><a href="#a">아동</a></li>
-                <li><a href="#a">부모</a></li>
-                <li><a href="#a">교직원</a></li>
-                <li><a href="#a">기관</a></li>
-                <li><a href="#a">비용안내</a></li>
+                <li><a href="/program/program-01.html">아동</a></li>
+                <li><a href="/program/program-02.html">부모</a></li>
+                <li><a href="/program/program-03.html">교직원</a></li>
+                <li><a href="/program/program-04.html">기관</a></li>
+                <li><a href="/program/program-05.html">비용안내</a></li>
               </ul>
             </li>
-            <li><a href="#a">심리검사 </a></li>
+            <li><a href="/trial.html">심리검사 </a></li>
             <li>
-              <a href="#a">상담안내 </a>
+              <a href="/order/order-01.html">상담안내 </a>
               <ul class="sub-nav-list" role="list">
-                <li><a href="#a">상담절차</a></li>
-                <li><a href="#a">상담예약</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#a">게시판 </a>
-              <ul class="sub-nav-list" role="list">
-                <li><a href="#a">공지사항</a></li>
-                <li><a href="#a">상담후기</a></li>
-                <li><a href="#a">양육상담</a></li>
-                <li><a href="#a">일정표</a></li>
+                <li><a href="/order/order-01.html">상담절차</a></li>
+                <li><a href="/order/order-02.html">상담예약</a></li>
               </ul>
             </li>
             <li>
-              <a href="#회원가입 페이지" aria-label="계정 페이지 링크"
+              <a href="/board/board-01.html">게시판 </a>
+              <ul class="sub-nav-list" role="list">
+                <li><a href="/board/board-01.html">공지사항</a></li>
+                <li><a href="/board/board-02.html">상담후기</a></li>
+                <li><a href="/board/board-03.html">양육상담</a></li>
+                <li class="restrict">
+                  <a href="#a">일정표</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/member/login.html" aria-label="계정 페이지 링크"
                 ><svg class="icon-account" width="20px" height="20px">
                   <use
-                    xlink:href="images/nav-account.svg#nav-account"
+                    xlink:href="/images/nav-account.svg#nav-account"
                   ></use></svg
               ></a>
             </li>
@@ -126,7 +129,10 @@
               </div>
             </div>
             <div class="card | section-border-radius">
-              <a href="#a" class="card-item | flex-column-center">
+              <a
+                href="/order/order-02.html"
+                class="card-item | flex-column-center"
+              >
                 <h3 class="card__title">상담예약</h3>
                 <svg class="card__image">
                   <use
@@ -134,7 +140,10 @@
                   ></use>
                 </svg>
               </a>
-              <a href="#a" class="card-item | flex-column-center">
+              <a
+                href="/program/program-05.html"
+                class="card-item | flex-column-center"
+              >
                 <h3 class="card__title">비용안내</h3>
                 <svg class="card__image">
                   <use
@@ -142,7 +151,10 @@
                   ></use>
                 </svg>
               </a>
-              <a href="#a" class="card-item | flex-column-center">
+              <a
+                href="/intro/intro-01.html"
+                class="card-item | flex-column-center"
+              >
                 <h3 class="card__title">연구소 소개</h3>
                 <svg class="card__image">
                   <use
@@ -150,7 +162,10 @@
                   ></use>
                 </svg>
               </a>
-              <a href="#a" class="card-item | flex-column-center">
+              <a
+                href="/intro/intro-05.html"
+                class="card-item | flex-column-center"
+              >
                 <h3 class="card__title">오시는 길</h3>
                 <svg class="card__image">
                   <use
@@ -168,7 +183,7 @@
           <div
             class="card-whited | bg-neutral-100 padding-block-500 section-border-radius ff-accent fs-500 fw-bold"
           >
-            <a href="#a" class="card-whited-item">
+            <a href="/program/program-01.html" class="card-whited-item">
               <img
                 class="card-whited__img"
                 src="./images/section-02-card-menu-01.png"
@@ -176,7 +191,7 @@
               />
               <p class="card-whited__title">아동</p>
             </a>
-            <a href="#a" class="card-whited-item">
+            <a href="/program/program-02.html" class="card-whited-item">
               <img
                 class="card-whited__img"
                 src="./images/section-02-card-menu-02.png"
@@ -184,7 +199,7 @@
               />
               <p class="card-whited__title">부모</p>
             </a>
-            <a href="#a" class="card-whited-item">
+            <a href="/program/program-03.html" class="card-whited-item">
               <img
                 class="card-whited__img"
                 src="./images/section-02-card-menu-03.png"
@@ -192,7 +207,7 @@
               />
               <p class="card-whited__title">교직원</p>
             </a>
-            <a href="#a" class="card-whited-item">
+            <a href="/program/program-04.html" class="card-whited-item">
               <img
                 class="card-whited__img"
                 src="./images/section-02-card-menu-04.png"
@@ -209,7 +224,7 @@
             <div class="flow">
               <h2 class="section-heading | fs-quaternary-heading">공지사항</h2>
               <dl>
-                <a class="notice" href="#a">
+                <a class="notice" href="/board/board-01.html">
                   <dt class="notice__body | text-nowrap">
                     2023 아동심리발달교육 4단계 (원장 전문성 교육)안내
                   </dt>
@@ -218,7 +233,7 @@
                     <span class="icon-eye-added">53</span>
                   </dd>
                 </a>
-                <a class="notice" href="#a">
+                <a class="notice" href="/board/board-01.html">
                   <dt class="notice__body | text-nowrap">
                     아동심리교육4단계 '그림으로 이야기하는 아동심리 이해'
                   </dt>
@@ -227,7 +242,7 @@
                     <span class="icon-eye-added">162</span>
                   </dd>
                 </a>
-                <a class="notice" href="#a">
+                <a class="notice" href="/board/board-01.html">
                   <dt class="notice__body | text-nowrap">
                     아동심리발달교육 안내
                   </dt>
@@ -241,24 +256,42 @@
             <div class="flow">
               <h2 class="section-heading fs-quaternary-heading">상담후기</h2>
               <div class="review">
-                <figure class="review-item">
-                  <img class="review__img" src="images/review-01.jpg" alt="" />
-                  <figcaption class="review__body | text-nowrap">
-                    2023 한국아동발달연구소 협...
-                  </figcaption>
-                </figure>
-                <figure class="review-item">
-                  <img class="review__img" src="images/review-02.jpg" alt="" />
-                  <figcaption class="review__body | text-nowrap">
-                    교직원힐링프로그램- 너와 나...
-                  </figcaption>
-                </figure>
-                <figure class="review-item">
-                  <img class="review__img" src="images/review-03.jpg" alt="" />
-                  <figcaption class="review__body | text-nowrap">
-                    집단교사코칭
-                  </figcaption>
-                </figure>
+                <a href="/board/board-02.html">
+                  <figure class="review-item">
+                    <img
+                      class="review__img"
+                      src="images/review-01.jpg"
+                      alt=""
+                    />
+                    <figcaption class="review__body | text-nowrap">
+                      2023 한국아동발달연구소 협...
+                    </figcaption>
+                  </figure>
+                </a>
+                <a href="/board/board-02.html">
+                  <figure class="review-item">
+                    <img
+                      class="review__img"
+                      src="images/review-02.jpg"
+                      alt=""
+                    />
+                    <figcaption class="review__body | text-nowrap">
+                      교직원힐링프로그램- 너와 나...
+                    </figcaption>
+                  </figure>
+                </a>
+                <a href="/board/board-02.html">
+                  <figure class="review-item">
+                    <img
+                      class="review__img"
+                      src="images/review-03.jpg"
+                      alt=""
+                    />
+                    <figcaption class="review__body | text-nowrap">
+                      집단교사코칭
+                    </figcaption>
+                  </figure>
+                </a>
               </div>
             </div>
           </div>
