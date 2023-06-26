@@ -511,7 +511,7 @@ body {
 /* intro hero */
 .hero[data-page="intro"] {
   background-image: linear-gradient(rgb(0 0 0/0.3), rgba(0 0 0 /0.3)),
-    url(/images/intro-hero.jpg);
+    url(/portfolio2/images/intro-hero.jpg);
 }
 /* secondary-navigation */
 @media (min-width: 43em) {
@@ -715,7 +715,7 @@ h3.story__title {
 /* hero */
 .hero[data-page="program"] {
   background-image: linear-gradient(rgb(0 0 0/0.3), rgba(0 0 0 /0.3)),
-    url(/images/program-hero.jpg);
+    url(/portfolio2/images/program-hero.jpg);
 }
 
 /* child */
@@ -818,7 +818,7 @@ td {
 
 .hero[data-page="trial"] {
   background-image: linear-gradient(rgb(0 0 0/0.3), rgba(0 0 0 /0.3)),
-    url(/images/trial-hero.jpg);
+    url(/portfolio2/images/trial-hero.jpg);
 }
 
 /*
@@ -828,7 +828,7 @@ td {
 
 .hero[data-page="order"] {
   background-image: linear-gradient(rgb(0 0 0/0.3), rgba(0 0 0 /0.3)),
-    url(/images/order-hero.jpg);
+    url(/portfolio2/images/order-hero.jpg);
 }
 
 .circle-outter {
@@ -855,7 +855,7 @@ td {
   z-index: 10;
   aspect-ratio: 1;
   transform: rotate(-50deg);
-  background-image: url(/images/icon-gt.png);
+  background-image: url(/portfolio2/images/icon-gt.png);
   background-repeat: no-repeat;
 }
 @media (max-width: 43em) {
@@ -997,7 +997,7 @@ td {
   color: var(--crl-neutral-400);
 }
 .gallery__body .icon-eye::before {
-  content: "\00a0\00a0"url(/images/icon-eye.png) "\00a0";
+  content: "\00a0\00a0"url(/portfolio2/images/icon-eye.png) "\00a0";
   position: relative;
   top: 0.05rem;
 }
@@ -1296,7 +1296,7 @@ td {
   text-align: center;
 }
 .table__title::after {
-  content: "\00a0"url(/images/icon-chat.png) "\00a0 1 "url(/images/icon-lock.png);
+  content: "\00a0"url(/portfolio2/images/icon-chat.png) "\00a0 1 "url(/portfolio2/images/icon-lock.png);
   font-size: var(--fs-500);
   color: var(--crl-neutral-500);
 }
@@ -1304,7 +1304,7 @@ td {
   display: none;
 }
 .table__title[data-chat-icon="none"]::after {
-  content: "\00a0 1 "url(/images/icon-lock.png);
+  content: "\00a0 1 "url(/portfolio2/images/icon-lock.png);
 }
 @media (max-width: 43em) {
   .table__th__number,
