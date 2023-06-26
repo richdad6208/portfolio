@@ -147,7 +147,7 @@ body {
 .mobile-nav-toggle {
   cursor: pointer;
   padding: var(--size-300);
-  background-image: url(../images/icon-hamburger.svg);
+  background-image: url(/portfolio2/images/icon-hamburger.svg);
   background-size: contain;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -155,7 +155,7 @@ body {
   transition: 0.15s;
 }
 .mobile-nav-toggle[aria-expanded="true"] {
-  background-image: url(../images/icon-close.svg);
+  background-image: url(/portfolio2/images/icon-close.svg);
 }
 @media (min-width: 43em) {
   .mobile-nav-toggle {
@@ -443,7 +443,7 @@ body {
   color: var(--crl-neutral-400);
 }
 .notice__meta .icon-eye-added::before {
-  content: "" url(../images/icon-eye.png);
+  content: "" url(/portfolio2/images/icon-eye.png);
   margin-inline-end: var(--size-100);
 }
 
@@ -1548,7 +1548,7 @@ td {
   position: relative;
 }
 .section-heading::after {
-  content: "" url(../images/icon-plus.png);
+  content: "" url(/portfolio2/images/icon-plus.png);
   position: absolute;
   right: 0;
   top: 50%;
