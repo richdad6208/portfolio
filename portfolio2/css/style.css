@@ -645,6 +645,11 @@ h3.story__title {
   .greet__content {
     position: static;
   }
+  .greet__title {
+    margin-block-start: -4rem;
+    font-size: var(--fs-700) !important;
+    word-break: keep-all;
+  }
 }
 .greet__keyword__body {
   background-color: var(--crl-neutral-200);
@@ -1922,6 +1927,11 @@ td {
 }
 .padding-inline-900 {
   padding-inline: var(--size-900);
+}
+@media (min-width: 43em) {
+  .padding-inline-900-md {
+    padding-inline: var(--size-900);
+  }
 }
 .padding-block-1100 {
   padding-block: var(--size-1100);
