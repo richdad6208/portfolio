@@ -181,6 +181,10 @@ body {
 .nav-list a {
   display: block;
 }
+.nav-list a[data-prevent="mobile"] {
+  pointer-events: none;
+  outline: 3px solid lime;
+}
 @media (min-width: 43em) {
   .primary-navigation {
     display: block;
