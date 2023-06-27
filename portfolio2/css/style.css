@@ -942,6 +942,11 @@ td {
     display: none;
   }
 }
+.circle-outter:not(:last-child) .circle-inner::after {
+  content: "" url(/portfolio2/images/icon-bottom.png);
+  position: relative;
+  top: 20vw;
+}
 .circle {
   margin-inline: auto;
   width: 90%;
@@ -991,7 +996,7 @@ td {
     width: 30vw;
   }
   .circle__body {
-    font-size: var(--fs-800);
+    font-size: var(--fs-500);
   }
 }
 
@@ -1004,6 +1009,11 @@ td {
   word-break: keep-all;
   padding-inline: var(--size-400);
 }
+@media (max-width: 43em) {
+  .text-area__title {
+    font-size: 9vw;
+  }
+}
 .text-area-wrapper {
   max-width: min(50rem, 90%);
   height: 20rem;
@@ -1013,7 +1023,11 @@ td {
   border-radius: var(--size-300);
   padding: var(--size-600) var(--size-700);
 }
-
+@media (max-width: 43em) {
+  .text-area-wrapper {
+    padding: 5vw 9vw;
+  }
+}
 .text-area__sublist {
   counter-reset: count;
 }
@@ -1089,9 +1103,13 @@ td {
     flex-direction: column;
     gap: var(--size-100);
   }
+  .login__form > p {
+    word-break: keep-all;
+  }
   .login input {
     width: 100%;
     display: block;
+    padding: var(--size-200) var(--size-200);
   }
   .login label {
     width: fit-content;
@@ -1113,6 +1131,11 @@ td {
   display: block;
   padding-inline: var(--size-600);
   color: var(--crl-neutral-500);
+}
+@media (max-width: 43em) {
+  .account-list a {
+    padding-inline: var(--size-100);
+  }
 }
 .account-list li:not(:first-child) {
   border-left: 1px solid var(--crl-neutral-300);
@@ -1150,7 +1173,7 @@ td {
 }
 @media (max-width: 43em) {
   .join__form {
-    grid-template-columns: none;
+    grid-template-columns: 100%;
     grid-auto-rows: fit-content;
   }
 }
@@ -1178,6 +1201,7 @@ td {
   border-width: 1px;
   border-color: var(--crl-neutral-300);
 }
+
 .join__form input[type="checkbox"] {
   margin-inline-end: var(--size-200);
 }
@@ -1197,6 +1221,9 @@ td {
 @media (max-width: 43em) {
   .join__input-wrapper {
     padding-block: var(--size-300);
+  }
+  .join__input-wrapper input[data-short="true"] {
+    width: 50vw !important;
   }
 }
 .join__input-wrapper button {
@@ -1818,6 +1845,9 @@ td {
   color: var(--crl-neutral-900);
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
 .bg-accent-100 {
   background-color: var(--crl-accent-100);
 }
