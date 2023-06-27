@@ -291,10 +291,16 @@ body {
 }
 @media (max-width: 43em) {
   .slider-item__content {
-    padding: 10rem var(--size-700);
+    padding: 10vw 7vw;
+    top: var(--size-500);
   }
   .slider-item__body {
-    font-size: var(--fs-300);
+    font-size: 3.5vw;
+  }
+  .slider-item__title {
+    font-size: 6vw;
+    max-width: 21ch;
+    font-weight: var(--fw-bold);
   }
 }
 
@@ -308,7 +314,7 @@ body {
 }
 @media (max-width: 43em) {
   .slider-control {
-    top: 70%;
+    top: 80%;
   }
 }
 .slider-control button {
@@ -1834,6 +1840,13 @@ td {
   font-family: var(--ff-primary);
   font-weight: var(--fw-bold);
   font-size: var(--fs-secondary-heading);
+}
+@media (min-width: 43em) {
+  .fs-secondary-heading-md {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-secondary-heading);
+  }
 }
 .fs-tertiary-heading {
   font-family: var(--ff-accent);
