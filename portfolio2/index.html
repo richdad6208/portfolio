@@ -19,11 +19,13 @@
   <body>
     <header class="primary-header | bg-neutral-100 padding-block-300-sm">
       <div class="container | flex-space-between">
-        <a href="/portfolio2/index.html" aria-label="home"
-          ><img
-            src="/portfolio2/images/logo.png"
-            alt="사단법인 한국아동발달연구소"
-        /></a>
+        <h1>
+          <a href="/portfolio2/index.html"
+            ><img
+              src="/portfolio2/images/logo.png"
+              alt="사단법인 한국아동발달연구소"
+          /></a>
+        </h1>
         <button
           class="mobile-nav-toggle"
           aria-controls="primary-navigation"
@@ -31,6 +33,7 @@
         >
           <span class="visually-hidden">menu</span>
         </button>
+        <h2 class="visually-hidden">대메뉴</h2>
         <nav class="primary-navigation | fs-nav" id="primary-navigation">
           <ul class="nav-list" role="list">
             <li>
@@ -91,9 +94,7 @@
               </ul>
             </li>
             <li>
-              <a
-                href="/portfolio2/member/login.html"
-                aria-label="계정 페이지 링크"
+              <a href="/portfolio2/member/login.html" aria-label="계정 페이지"
                 ><svg class="icon-account" width="20px" height="20px">
                   <use
                     xlink:href="/portfolio2/images/nav-account.svg#nav-account"
@@ -111,6 +112,7 @@
         <div class="container">
           <div class="even-columns grid-column-left-bigger">
             <div class="slider-wrapper section-border-radius">
+              <h2 class="visually-hidden">핵심 슬로건</h2>
               <ul class="slider" role="list">
                 <li class="slider-item">
                   <img
@@ -155,51 +157,62 @@
                 <button class="slider__next"></button>
               </div>
             </div>
-            <div class="card | section-border-radius">
-              <a
-                href="/portfolio2/order/order-02.html"
-                class="card-item | flex-column-center"
-              >
-                <h3 class="card__title">상담예약</h3>
-                <svg class="card__image">
-                  <use
-                    xlink:href="/portfolio2/images/section-01-card-images.svg#section-01-card-menu-01"
-                  ></use>
-                </svg>
-              </a>
-              <a
-                href="/portfolio2/program/program-05.html"
-                class="card-item | flex-column-center"
-              >
-                <h3 class="card__title">비용안내</h3>
-                <svg class="card__image">
-                  <use
-                    xlink:href="/portfolio2/images/section-01-card-images.svg#section-01-card-menu-02"
-                  ></use>
-                </svg>
-              </a>
-              <a
-                href="/portfolio2/intro/intro-01.html"
-                class="card-item | flex-column-center"
-              >
-                <h3 class="card__title">연구소 소개</h3>
-                <svg class="card__image">
-                  <use
-                    xlink:href="/portfolio2/images/section-01-card-images.svg#section-01-card-menu-03"
-                  ></use>
-                </svg>
-              </a>
-              <a
-                href="/portfolio2/intro/intro-05.html"
-                class="card-item | flex-column-center"
-              >
-                <h3 class="card__title">오시는 길</h3>
-                <svg class="card__image">
-                  <use
-                    xlink:href="/portfolio2/images/section-01-card-images.svg#section-01-card-menu-04"
-                  ></use>
-                </svg>
-              </a>
+            <div class="section-border-radius">
+              <h2 class="visually-hidden">소메뉴</h2>
+              <ul class="card" role="list">
+                <li>
+                  <a
+                    href="/portfolio2/order/order-02.html"
+                    class="card-item | flex-column-center"
+                  >
+                    <h3 class="card__title">상담예약</h3>
+                    <svg class="card__image">
+                      <use
+                        xlink:href="/portfolio2/images/section-01-card-images.svg#section-01-card-menu-01"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/portfolio2/program/program-05.html"
+                    class="card-item | flex-column-center"
+                  >
+                    <h3 class="card__title">비용안내</h3>
+                    <svg class="card__image">
+                      <use
+                        xlink:href="/portfolio2/images/section-01-card-images.svg#section-01-card-menu-02"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/portfolio2/intro/intro-01.html"
+                    class="card-item | flex-column-center"
+                  >
+                    <h3 class="card__title">연구소 소개</h3>
+                    <svg class="card__image">
+                      <use
+                        xlink:href="/portfolio2/images/section-01-card-images.svg#section-01-card-menu-03"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/portfolio2/intro/intro-05.html"
+                    class="card-item | flex-column-center"
+                  >
+                    <h3 class="card__title">오시는 길</h3>
+                    <svg class="card__image">
+                      <use
+                        xlink:href="/portfolio2/images/section-01-card-images.svg#section-01-card-menu-04"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -208,61 +221,71 @@
         <div class="container | flow">
           <h2 class="fs-quaternary-heading">프로그램 안내</h2>
           <div
-            class="card-whited | bg-neutral-100 padding-block-500 section-border-radius ff-accent fs-500 fw-bold"
+            class="bg-neutral-100 padding-block-500 section-border-radius ff-accent fs-500 fw-bold"
           >
-            <a
-              href="/portfolio2/program/program-01.html"
-              class="card-whited-item"
-            >
-              <img
-                class="card-whited__img"
-                src="/portfolio2/images/section-02-card-menu-01.png"
-                alt=""
-              />
-              <p class="card-whited__title">아동</p>
-            </a>
-            <a
-              href="/portfolio2/program/program-02.html"
-              class="card-whited-item"
-            >
-              <img
-                class="card-whited__img"
-                src="/portfolio2/images/section-02-card-menu-02.png"
-                alt=""
-              />
-              <p class="card-whited__title">부모</p>
-            </a>
-            <a
-              href="/portfolio2/program/program-03.html"
-              class="card-whited-item"
-            >
-              <img
-                class="card-whited__img"
-                src="/portfolio2/images/section-02-card-menu-03.png"
-                alt=""
-              />
-              <p class="card-whited__title">교직원</p>
-            </a>
-            <a
-              href="/portfolio2/program/program-04.html"
-              class="card-whited-item"
-            >
-              <img
-                class="card-whited__img"
-                src="/portfolio2/images/section-02-card-menu-04.png"
-                alt=""
-              />
-              <p class="card-whited__title">기관</p>
-            </a>
+            <ul class="card-whited" role="list">
+              <li>
+                <a
+                  href="/portfolio2/program/program-01.html"
+                  class="card-whited-item"
+                >
+                  <img
+                    class="card-whited__img"
+                    src="/portfolio2/images/section-02-card-menu-01.png"
+                    alt=""
+                  />
+                  <h3 class="card-whited__title">아동</h3>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/portfolio2/program/program-02.html"
+                  class="card-whited-item"
+                >
+                  <img
+                    class="card-whited__img"
+                    src="/portfolio2/images/section-02-card-menu-02.png"
+                    alt=""
+                  />
+                  <h3 class="card-whited__title">부모</h3>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/portfolio2/program/program-03.html"
+                  class="card-whited-item"
+                >
+                  <img
+                    class="card-whited__img"
+                    src="/portfolio2/images/section-02-card-menu-03.png"
+                    alt=""
+                  />
+                  <h3 class="card-whited__title">교직원</h3>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/portfolio2/program/program-04.html"
+                  class="card-whited-item"
+                >
+                  <img
+                    class="card-whited__img"
+                    src="/portfolio2/images/section-02-card-menu-04.png"
+                    alt=""
+                  />
+                  <h3 class="card-whited__title">기관</h3>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
       <section class="padding-block-500">
         <div class="container">
-          <div class="even-columns">
+          <div class="even-columns | gap-700">
             <div class="flow">
               <h2 class="section-heading | fs-quaternary-heading">공지사항</h2>
-              <dl>
+              <dl class="flow" style="--flow-spacer: 0.5rem">
                 <a class="notice" href="/portfolio2/board/board-01.html">
                   <dt class="notice__body | text-nowrap">
                     2023 아동심리발달교육 4단계 (원장 전문성 교육)안내
@@ -292,46 +315,52 @@
                 </a>
               </dl>
             </div>
-            <div class="flow">
+            <div class="flow" style="--flow-spacer: 0.5rem">
               <h2 class="section-heading fs-quaternary-heading">상담후기</h2>
-              <div class="review">
-                <a href="/portfolio2/board/board-02.html">
-                  <figure class="review-item">
-                    <img
-                      class="review__img"
-                      src="/portfolio2/images/review-01.jpg"
-                      alt=""
-                    />
-                    <figcaption class="review__body | text-nowrap">
-                      2023 한국아동발달연구소 협...
-                    </figcaption>
-                  </figure>
-                </a>
-                <a href="/portfolio2/board/board-02.html">
-                  <figure class="review-item">
-                    <img
-                      class="review__img"
-                      src="/portfolio2/images/review-02.jpg"
-                      alt=""
-                    />
-                    <figcaption class="review__body | text-nowrap">
-                      교직원힐링프로그램- 너와 나...
-                    </figcaption>
-                  </figure>
-                </a>
-                <a href="/portfolio2/board/board-02.html">
-                  <figure class="review-item">
-                    <img
-                      class="review__img"
-                      src="/portfolio2/images/review-03.jpg"
-                      alt=""
-                    />
-                    <figcaption class="review__body | text-nowrap">
-                      집단교사코칭
-                    </figcaption>
-                  </figure>
-                </a>
-              </div>
+              <ul class="review" role="list">
+                <li>
+                  <a href="/portfolio2/board/board-02.html">
+                    <figure class="review-item">
+                      <img
+                        class="review__img"
+                        src="/portfolio2/images/review-01.jpg"
+                        alt=""
+                      />
+                      <figcaption class="review__body | text-nowrap">
+                        2023 한국아동발달연구소 협...
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                  <a href="/portfolio2/board/board-02.html">
+                    <figure class="review-item">
+                      <img
+                        class="review__img"
+                        src="/portfolio2/images/review-02.jpg"
+                        alt=""
+                      />
+                      <figcaption class="review__body | text-nowrap">
+                        교직원힐링프로그램- 너와 나...
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                  <a href="/portfolio2/board/board-02.html">
+                    <figure class="review-item">
+                      <img
+                        class="review__img"
+                        src="/portfolio2/images/review-03.jpg"
+                        alt=""
+                      />
+                      <figcaption class="review__body | text-nowrap">
+                        집단교사코칭
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -343,14 +372,11 @@
       <div class="container">
         <div class="even-columns grid-space-between">
           <div>
+            <h2 class="visually-hidden">회사 연락처 및 기타 정보</h2>
             <address>
               <span class="text-neutral-300">사단법인 한국아동발달연구소</span>
               <span>서울시 강남구 역삼로 230, 세명빌딩 5층</span>
-              <ul
-                class="inform-list"
-                role="list"
-                aria-lable="회사 연락처 및 기타 정보"
-              >
+              <ul class="inform-list" role="list">
                 <li>대표이사: 강은주</li>
                 <li>사업자 번호: 550-82-00457</li>
                 <li>Tel: 02-6338-1011</li>
@@ -363,10 +389,13 @@
             </address>
           </div>
           <div class="external-link">
-            <a href="#a" aria-label="모아맘보육재단 링크 바로가기"
-              ><img src="/portfolio2/images/footer-logo-01.jpg" alt=""
+            <h2 class="visually-hidden">외부사이트 배너</h2>
+            <a href="#a"
+              ><img
+                src="/portfolio2/images/footer-logo-01.jpg"
+                alt="모아맘보육재단"
             /></a>
-            <a href="#a" aria-label="보건복지부 사이트 바로가기"
+            <a href="#a"
               ><img
                 src="/portfolio2/images/footer-logo-02.jpg"
                 alt="보건복지부 링크"

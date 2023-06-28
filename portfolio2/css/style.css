@@ -353,16 +353,16 @@ body {
 .card-item:hover {
   filter: brightness(90%);
 }
-.card-item:nth-child(1) {
+li:nth-child(1) .card-item {
   background: var(--crl-accent-100);
 }
-.card-item:nth-child(2) {
+li:nth-child(2) .card-item {
   background: var(--crl-primary-100);
 }
-.card-item:nth-child(3) {
+li:nth-child(3) .card-item {
   background: var(--crl-primary-400);
 }
-.card-item:nth-child(4) {
+li:nth-child(4) .card-item {
   background: var(--crl-primary-500);
 }
 .card__image {
@@ -404,7 +404,7 @@ body {
   align-items: center;
   gap: clamp(var(--size-100), 1vw, var(--size-200));
 }
-.card-whited-item:not(:first-child)::before {
+li:not(:first-child) .card-whited-item::before {
   content: "";
   pointer-events: none;
   display: block;
@@ -418,15 +418,22 @@ body {
   width: 7vw;
   aspect-ratio: 1/1;
 }
-
+.card-whited__title {
+  word-break: keep-all;
+}
 @media (max-width: 43em) {
   .card-whited-item {
     flex-direction: column;
     position: relative;
   }
-  .card-whited-item:not(:first-child)::before {
+  li:not(:first-child) .card-whited-item::before {
     position: absolute;
     top: 20%;
+    left: -15vw;
+  }
+  li:first-child .card-whited-item::before,
+  li:nth-child(3) .card-whited-item::before {
+    display: none;
   }
   .card-whited__img {
     width: var(--size-900);
@@ -437,7 +444,9 @@ body {
 
 .notice {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr max-content;
+  justify-content: space-between;
+  gap: var(--size-500);
 }
 .notice:hover .notice__body {
   color: var(--crl-primary-400);
@@ -449,6 +458,7 @@ body {
 .notice__meta {
   word-break: keep-all;
   display: flex;
+
   gap: var(--size-200);
   font-size: var(--fs-200);
   color: var(--crl-neutral-400);
@@ -1050,6 +1060,14 @@ td {
 }
 /*
 =========================================================================== */
+
+/* border */
+
+.hero[data-page="board"] {
+  background-image: linear-gradient(rgb(0 0 0/0.3), rgba(0 0 0 /0.3)),
+    url(/portfolio2/images/board-hero.jpg);
+}
+
 .gallery__img {
   aspect-ratio: 2/1.2;
   object-fit: cover;
@@ -1685,6 +1703,7 @@ td {
     gap: var(--size-600);
   }
 }
+
 .justify-self-end {
   justify-self: end;
 }
@@ -1733,6 +1752,16 @@ td {
 .gap-500 {
   display: grid;
   gap: var(--size-500);
+}
+.gap-700 {
+  display: grid;
+  gap: var(--size-700);
+}
+@media (max-width: 43em) {
+  .gap-700-sm {
+    display: grid;
+    gap: var(--size-700);
+  }
 }
 .gap-100 {
   display: grid;

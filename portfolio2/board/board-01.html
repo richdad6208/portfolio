@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/portfolio2/css/style.css" />
-    <link rel="stylesheet" href="/portfolio2/css/webfonts.css" /><link
-    rel="shortcut icon"
-    href="/portfolio2/images/favicon.jpg"
-    type="image/x-icon"
-  />
+    <link rel="stylesheet" href="/portfolio2/css/webfonts.css" />
+    <link
+      rel="shortcut icon"
+      href="/portfolio2/images/favicon.jpg"
+      type="image/x-icon"
+    />
     <script src="/portfolio2/js/main.js" defer></script>
     <script src="/portfolio2/js/modal.js" defer></script>
     <script src="/portfolio2/js/alert.js" defer></script>
@@ -18,11 +19,13 @@
   <body>
     <header class="primary-header | bg-neutral-100 padding-block-300-sm">
       <div class="container | flex-space-between">
-        <a href="/portfolio2/index.html" aria-label="home"
-          ><img
-            src="/portfolio2/images/logo.png"
-            alt="사단법인 한국아동발달연구소"
-        /></a>
+        <h1>
+          <a href="/portfolio2/index.html"
+            ><img
+              src="/portfolio2/images/logo.png"
+              alt="사단법인 한국아동발달연구소"
+          /></a>
+        </h1>
         <button
           class="mobile-nav-toggle"
           aria-controls="primary-navigation"
@@ -30,6 +33,7 @@
         >
           <span class="visually-hidden">menu</span>
         </button>
+        <h2 class="visually-hidden">대메뉴</h2>
         <nav class="primary-navigation | fs-nav" id="primary-navigation">
           <ul class="nav-list" role="list">
             <li>
@@ -90,9 +94,7 @@
               </ul>
             </li>
             <li>
-              <a
-                href="/portfolio2/member/login.html"
-                aria-label="계정 페이지 링크"
+              <a href="/portfolio2/member/login.html" aria-label="계정 페이지"
                 ><svg class="icon-account" width="20px" height="20px">
                   <use
                     xlink:href="/portfolio2/images/nav-account.svg#nav-account"
@@ -106,28 +108,25 @@
     <main>
       <section
         class="hero | padding-block-900 text-center margin-block-start-700-sm"
-        data-page="order"
+        data-page="board"
       >
         <div class="container">
           <div class="hero-wrapper | gap-100">
             <h2 class="hero__title | fs-primary-heading text-neutral-100">
-              상담안내
+              게시판
             </h2>
-            <span class="hero__body">
-              사전 신청 및 예약제로 운영되며 일요일과 공휴일은 휴무입니다.
-            </span>
           </div>
         </div>
       </section>
       <aside class="padding-block-start-500">
         <div class="container">
           <div class="flex-space-between flex-column-reverse-sm">
+            <h3 class="visually-hidden">게시판 메뉴 및 현재위치</h3>
             <nav class="secondary-navigation | fs-tertiary-heading">
               <ul
                 class="menu-list | flow-sm"
                 style="--flow-spacer: 0.3rem"
                 role="list"
-                aria
               >
                 <li aria-current="page" class="active">
                   <a href="/portfolio2/board/board-01.html">공지사항</a>
@@ -152,6 +151,7 @@
       </aside>
       <section class="padding-block-900">
         <div class="container">
+          <h4 class="visually-hidden">공지사항 게시판</h4>
           <div class="table-wrapper | flow" style="--flow-spacer: 4rem">
             <table class="table" data-icon="none">
               <colgroup>
@@ -232,16 +232,17 @@
             </div>
           </div>
         </div>
+        <h5 class="visually-hidden">비밀번호 입력창</h5>
         <dialog class="dialog">
           <form
             class="dialog__form"
-            action="
+            action="  
             "
           >
             <div class="dialog__label-wrapper flex-space-between">
               <label class="dialog__label" for="password">비밀번호 입력</label>
-              <button class="dialog__close" aria-label="modal close">
-                <img src="/portfolio2/images/icon-cancel--colored.png" alt="" />
+              <button class="dialog__close">
+                <img src="/portfolio2/images/icon-cancel--colored.png" alt="닫기버튼" />
               </button>
             </div>
             <input
@@ -249,6 +250,7 @@
               name="password"
               type="password"
               placeholder="Password"
+              aria-label="비밀번호 입력"
             />
             <div class="button-wrapper">
               <button class="button close" data-colored="white">닫기</button>
@@ -264,14 +266,11 @@
       <div class="container">
         <div class="even-columns grid-space-between">
           <div>
+            <h2 class="visually-hidden">회사 연락처 및 기타 정보</h2>
             <address>
               <span class="text-neutral-300">사단법인 한국아동발달연구소</span>
               <span>서울시 강남구 역삼로 230, 세명빌딩 5층</span>
-              <ul
-                class="inform-list"
-                role="list"
-                aria-lable="회사 연락처 및 기타 정보"
-              >
+              <ul class="inform-list" role="list">
                 <li>대표이사: 강은주</li>
                 <li>사업자 번호: 550-82-00457</li>
                 <li>Tel: 02-6338-1011</li>
@@ -284,11 +283,16 @@
             </address>
           </div>
           <div class="external-link">
-            <a href="#a" aria-label="모아맘보육재단 링크 바로가기"
-              ><img src="/portfolio2/images/footer-logo-01.jpg" alt=""
+            <h2 class="visually-hidden">외부사이트 배너</h2>
+            <a href="#a"
+              ><img
+                src="/portfolio2/images/footer-logo-01.jpg"
+                alt="모아맘보육재단"
             /></a>
-            <a href="#a" aria-label="보건복지부 사이트 바로가기"
-              ><img src="/portfolio2/images/footer-logo-02.jpg" alt="보건복지부 링크"
+            <a href="#a"
+              ><img
+                src="/portfolio2/images/footer-logo-02.jpg"
+                alt="보건복지부 링크"
             /></a>
           </div>
         </div>

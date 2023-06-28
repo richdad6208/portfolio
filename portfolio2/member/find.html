@@ -19,11 +19,13 @@
   <body>
     <header class="primary-header | bg-neutral-100 padding-block-300-sm">
       <div class="container | flex-space-between">
-        <a href="/portfolio2/index.html" aria-label="home"
-          ><img
-            src="/portfolio2/images/logo.png"
-            alt="사단법인 한국아동발달연구소"
-        /></a>
+        <h1>
+          <a href="/portfolio2/index.html"
+            ><img
+              src="/portfolio2/images/logo.png"
+              alt="사단법인 한국아동발달연구소"
+          /></a>
+        </h1>
         <button
           class="mobile-nav-toggle"
           aria-controls="primary-navigation"
@@ -31,6 +33,7 @@
         >
           <span class="visually-hidden">menu</span>
         </button>
+        <h2 class="visually-hidden">대메뉴</h2>
         <nav class="primary-navigation | fs-nav" id="primary-navigation">
           <ul class="nav-list" role="list">
             <li>
@@ -91,9 +94,7 @@
               </ul>
             </li>
             <li>
-              <a
-                href="/portfolio2/member/login.html"
-                aria-label="계정 페이지 링크"
+              <a href="/portfolio2/member/login.html" aria-label="계정 페이지"
                 ><svg class="icon-account" width="20px" height="20px">
                   <use
                     xlink:href="/portfolio2/images/nav-account.svg#nav-account"
@@ -170,14 +171,11 @@
       <div class="container">
         <div class="even-columns grid-space-between">
           <div>
+            <h2 class="visually-hidden">회사 연락처 및 기타 정보</h2>
             <address>
               <span class="text-neutral-300">사단법인 한국아동발달연구소</span>
               <span>서울시 강남구 역삼로 230, 세명빌딩 5층</span>
-              <ul
-                class="inform-list"
-                role="list"
-                aria-lable="회사 연락처 및 기타 정보"
-              >
+              <ul class="inform-list" role="list">
                 <li>대표이사: 강은주</li>
                 <li>사업자 번호: 550-82-00457</li>
                 <li>Tel: 02-6338-1011</li>
@@ -190,10 +188,13 @@
             </address>
           </div>
           <div class="external-link">
-            <a href="#a" aria-label="모아맘보육재단 링크 바로가기"
-              ><img src="/portfolio2/images/footer-logo-01.jpg" alt=""
+            <h2 class="visually-hidden">외부사이트 배너</h2>
+            <a href="#a"
+              ><img
+                src="/portfolio2/images/footer-logo-01.jpg"
+                alt="모아맘보육재단"
             /></a>
-            <a href="#a" aria-label="보건복지부 사이트 바로가기"
+            <a href="#a"
               ><img
                 src="/portfolio2/images/footer-logo-02.jpg"
                 alt="보건복지부 링크"
