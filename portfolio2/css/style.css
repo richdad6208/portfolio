@@ -279,11 +279,11 @@ body {
 }
 @media (max-width: 43em) {
   .slider-wrapper {
-    aspect-ratio: 1;
+    aspect-ratio: 1/1;
     text-align: center;
   }
   .slider-item__img {
-    aspect-ratio: 1;
+    aspect-ratio: 1/1;
   }
 }
 .slider-item__content {
@@ -324,7 +324,7 @@ body {
 }
 .slider-control button {
   width: 15px;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   cursor: pointer;
   background-color: var(--crl-neutral-100);
   color: var(--crl-neutral-900);
@@ -624,7 +624,7 @@ h3.story__title {
 @media (max-width: 43em) {
   .story__summary {
     width: var(--size-900);
-    aspect-ratio: 1;
+    aspect-ratio: 1/1;
   }
   .story__summary__inverse {
     width: auto;
@@ -897,7 +897,7 @@ td {
 .circle-outter {
   position: relative;
   width: 15.5vw;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   background-image: linear-gradient(
     var(--crl-accent-50) 0 50%,
     var(--crl-neutral-200) 50% 100%
@@ -916,7 +916,7 @@ td {
   display: inline-block;
   width: 2rem;
   z-index: 10;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   transform: rotate(-50deg);
   background-image: url(/portfolio2/images/icon-gt.png);
   background-repeat: no-repeat;
@@ -983,14 +983,14 @@ td {
   inset: 0;
   margin: auto;
   width: 15vw;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   background-color: var(--crl-neutral-100);
   border-radius: 100vmax;
   transform: rotate(-50deg);
 }
 .circle__img {
   width: 7vw;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   border-radius: 100vmax;
   margin-top: var(--size-400);
 }
@@ -1192,7 +1192,7 @@ td {
 @media (max-width: 43em) {
   .join__form {
     grid-template-columns: 100%;
-    grid-auto-rows: fit-content;
+    grid-auto-rows: auto;
   }
 }
 .join__form label {
@@ -1333,7 +1333,7 @@ td {
   flex-shrink: 0;
 }
 .map__button__icon {
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   width: 12px;
   --icon-crl: var(--crl-accent-100);
 }
@@ -1360,7 +1360,7 @@ td {
 }
 .hero-wrapper {
   justify-items: center;
-  grid-auto-columns: fit-content;
+  grid-auto-columns: auto;
 }
 
 /* table */
@@ -1446,12 +1446,12 @@ td {
 }
 .pagination a {
   padding: var(--size-300);
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
 }
 .pagination__img-wrapper {
   border: 1px solid var(--crl-neutral-300);
   width: var(--size-600);
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
 }
 .pagination__img {
   position: relative;
@@ -1525,7 +1525,7 @@ td {
   height: 100%;
   overflow: hidden;
 }
-:modal {
+.dialog:modal {
   border: 0;
   margin: var(--size-500) auto;
 }
@@ -1683,7 +1683,7 @@ td {
 @media (max-width: 43em) {
   .even-columns {
     grid-auto-flow: row;
-    grid-auto-flow: auto;
+    grid-auto-rows: auto;
   }
 }
 .grid-two-columns-1to4 {

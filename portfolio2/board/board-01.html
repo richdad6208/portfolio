@@ -211,7 +211,7 @@
                 <form
                   class="search__form | flow-sm"
                   style="--flow-spacer: 0.5rem"
-                  action=""
+                  action="get"
                 >
                   <label class="visually-hidden" for="search__box"
                     >제목, 내용, 작성자 이름</label
@@ -234,21 +234,21 @@
         </div>
         <h5 class="visually-hidden">비밀번호 입력창</h5>
         <dialog class="dialog">
-          <form
-            class="dialog__form"
-            action="  
-            "
-          >
+          <form class="dialog__form" action="post">
             <div class="dialog__label-wrapper flex-space-between">
               <label class="dialog__label" for="password">비밀번호 입력</label>
               <button class="dialog__close">
-                <img src="/portfolio2/images/icon-cancel--colored.png" alt="닫기버튼" />
+                <img
+                  src="/portfolio2/images/icon-cancel--colored.png"
+                  alt="닫기버튼"
+                />
               </button>
             </div>
             <input
               class="dialog__input"
               name="password"
               type="password"
+              id="password"
               placeholder="Password"
               aria-label="비밀번호 입력"
             />

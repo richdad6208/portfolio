@@ -130,7 +130,6 @@
                 class="menu-list | flow-sm"
                 style="--flow-spacer: 0.3rem"
                 role="list"
-                aria
               >
                 <li>
                   <a href="/portfolio2/order/order-01.html">상담절차</a>
@@ -429,7 +428,7 @@
                 <form
                   class="search__form | flow-sm"
                   style="--flow-spacer: 0.5rem"
-                  action=""
+                  action="get"
                 >
                   <label class="visually-hidden" for="search__box"
                     >제목, 내용, 작성자 이름</label
@@ -452,11 +451,7 @@
           </div>
         </div>
         <dialog class="dialog">
-          <form
-            class="dialog__form"
-            action="
-            "
-          >
+          <form class="dialog__form" action="post">
             <div class="dialog__label-wrapper flex-space-between">
               <label class="dialog__label" for="password">비밀번호 입력</label>
               <button class="dialog__close" aria-label="modal close">
@@ -468,6 +463,7 @@
               name="password"
               type="password"
               placeholder="Password"
+              id="password"
             />
             <div class="button-wrapper">
               <button class="button close" data-colored="white">닫기</button>
